@@ -3,20 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Armin - KWI</title>
+  <title>Kaiser Wilhelm Institute</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Global styles -->
+  <!-- Unified CSS -->
   <link rel="stylesheet" href="/WRTG3600-Historical_Fiction/app.css">
 </head>
 
 <body>
 
-  <!-- Top navbar -->
+  <!-- Top Navbar (loaded dynamically) -->
   <div id="top-navbar"></div>
 
+  <!-- PAGE LAYOUT -->
   <div class="container">
-    <!-- Sidebar -->
+
+    <!-- LEFT SIDEBAR -->
     <nav class="sidebar">
       <ul>
         <li><a href="#" data-page="hallervorden">Julius Hallervorden</a></li>
@@ -28,41 +30,41 @@
       </ul>
     </nav>
 
-    <!-- RIGHT SIDE CONTENT (column layout) -->
+    <!-- RIGHT-CONTENT COLUMN -->
     <div class="right-content">
 
-      <!-- Main content -->
+      <!-- SMALL SLIDESHOW -->
       <div class="slideshow-container">
         <div class="slide fade">
-          <img src="/WRTG3600-Historical_Fiction/images/julius-hallervorden.jpg" alt="Julius Hallervorden">
+          <img src="/WRTG3600-Historical_Fiction/images/julius-hallervorden.jpg" alt="Hallervorden">
         </div>
 
         <div class="slide fade">
-          <img src="/WRTG3600-Historical_Fiction/images/hugo-spatz.png" alt="Hugo Spatz">
+          <img src="/WRTG3600-Historical_Fiction/images/hugo-spatz.png" alt="Spatz">
         </div>
 
         <div class="slide fade">
-          <img src="/WRTG3600-Historical_Fiction/images/berthold-ostertag.JPG" alt="Berthold Ostertag">
+          <img src="/WRTG3600-Historical_Fiction/images/berthold-ostertag.JPG" alt="Ostertag">
         </div>
 
         <div class="slide fade">
-          <img src="/WRTG3600-Historical_Fiction/images/hans-nachtsheim.png" alt="Hans Nachtsheim">
+          <img src="/WRTG3600-Historical_Fiction/images/hans-nachtsheim.png" alt="Nachtsheim">
         </div>
 
         <div class="slide fade">
-          <img src="/WRTG3600-Historical_Fiction/images/dr-max-de-crinis.jpg" alt="Dr. Max de Crinis">
+          <img src="/WRTG3600-Historical_Fiction/images/dr-max-de-crinis.jpg" alt="Crinis">
         </div>
 
         <div class="slide fade">
-          <img src="/WRTG3600-Historical_Fiction/images/carl-schneider.jpg" alt="Dr. Carl Schneider">
+          <img src="/WRTG3600-Historical_Fiction/images/carl-schneider.jpg" alt="Schneider">
         </div>
+
+        <!-- Arrows -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
       </div>
 
-      <!-- Navigation arrows -->
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
-
-      <!-- Dot controls -->
+      <!-- Dot indicators -->
       <div class="dots-container">
         <span class="dot"></span>
         <span class="dot"></span>
@@ -72,20 +74,26 @@
         <span class="dot"></span>
       </div>
 
+      <!-- MAIN STORY AREA -->
       <main class="story-content" id="main-content">
-        <h2>Welcome to the Kaiser Wilhelm Institute</h2>
-        <p>Select a scientist from the sidebar to view the story.</p>
+        <h2>Kaiser Wilhelm Institute</h2>
+        <p>Select a researcher from the left menu to begin.</p>
       </main>
 
-      <footer class="site-footer"></footer>
-      
-    </div>
+    </div> <!-- end right-content -->
 
-  </div>
+  </div> <!-- end container -->
 
-  <script src="scripts/kwi.js"></script>
-  <script src="scripts/slideshow.js"></script>
-  <script src="app.js"></script>
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    © 2025 — Armin Historical Fiction Project
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/WRTG3600-Historical_Fiction/scripts/kwi.js"></script>
+  <script src="/WRTG3600-Historical_Fiction/scripts/slideshow.js"></script>
+  <script src="/WRTG3600-Historical_Fiction/app.js"></script>
+
 </body>
 
 </html>
