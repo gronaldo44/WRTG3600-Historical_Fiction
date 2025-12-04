@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Global styles -->
-  <link rel="stylesheet" href="/app.css">
+  <link rel="stylesheet" href="app.css">
   <!-- Header styles -->
-  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="styles/header.css">
   <!-- Page-specific styles -->
-  <link rel="stylesheet" href="/styles/kwi.css">
-  <link rel="stylesheet" href="/styles/slideshow.css">
+  <link rel="stylesheet" href="styles/kwi.css">
+  <link rel="stylesheet" href="styles/slideshow.css">
 </head>
 
 <body>
@@ -21,7 +21,6 @@
   <div id="top-navbar"></div>
 
   <div class="container">
-
     <!-- Sidebar -->
     <nav class="sidebar">
       <ul>
@@ -37,9 +36,8 @@
     <!-- RIGHT SIDE CONTENT (column layout) -->
     <div class="right-content">
 
-      <!-- Slideshow -->
+      <!-- Main content -->
       <div class="slideshow-container">
-
         <div class="slide fade">
           <img src="/WRTG3600-Historical_Fiction/images/julius-hallervorden.jpg" alt="Julius Hallervorden">
         </div>
@@ -63,41 +61,35 @@
         <div class="slide fade">
           <img src="/WRTG3600-Historical_Fiction/images/carl-schneider.jpg" alt="Dr. Carl Schneider">
         </div>
+      </div>
+      
+      <!-- Navigation arrows -->
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
 
-        <!-- Navigation arrows -->
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
+      <!-- Dot controls -->
+      <div class="dots-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
 
-        <!-- Dot controls -->
-        <div class="dots-container">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+    <main class="story-content" id="main-content">
+      <h2>Welcome to the Kaiser Wilhelm Institute</h2>
+      <p>Select a scientist from the sidebar to view the story.</p>
+    </main>
 
-      </div> <!-- END slideshow-container -->
+    <footer class="site-footer"></footer>
 
-      <!-- Dynamic story content -->
-      <main class="story-content" id="main-content">
-        <h2>Welcome to the Kaiser Wilhelm Institute</h2>
-        <p>Select a scientist from the sidebar to view the story.</p>
-      </main>
+  </div>
 
-      <!-- Footer -->
-      <footer class="site-footer"></footer>
-
-    </div> <!-- END right-content -->
-
-  </div> <!-- END container -->
-
-  <!-- Scripts -->
-  <script src="/scripts/kwi.js"></script>
-  <script src="/scripts/slideshow.js"></script>
-  <script src="/app.js"></script>
-
+  <script src="scripts/kwi.js"></script>
+  <script src="scripts/slideshow.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
