@@ -11,19 +11,19 @@
 .sidebar {
   width: 260px;
   background: #1f1f1f;
-  /* deep neutral */
   color: #ddd;
   padding: 1.5rem 1rem;
-  height: 100vh;
-  /* full height */
+
   position: sticky;
-  top: 0;
-  /* remains visible when scrolling */
+  top: 60px;
+
+  height: calc(100vh - 60px);
+
   border-right: 1px solid #333;
-  /* subtle separation */
   box-sizing: border-box;
   overflow-y: auto;
 }
+
 
 /* Sidebar list */
 .sidebar ul {
