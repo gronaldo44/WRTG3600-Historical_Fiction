@@ -1,13 +1,14 @@
-/* /styles/kwi.css */
+/* ============================================
+   KWI PAGE LAYOUT (Sidebar + Main Content)
+   ============================================ */
 
-/* Container layout for sidebar + main content */
 .container {
   display: flex;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* Sidebar — modern app-style (ChatGPT / YouTube-inspired) */
+/* Sidebar */
 .sidebar {
   width: 260px;
   background: #1f1f1f;
@@ -16,7 +17,6 @@
 
   position: sticky;
   top: 60px;
-
   height: calc(100vh - 60px);
 
   border-right: 1px solid #333;
@@ -24,8 +24,6 @@
   overflow-y: auto;
 }
 
-
-/* Sidebar list */
 .sidebar ul {
   list-style: none;
   margin: 0;
@@ -36,7 +34,6 @@
   margin: 0.5rem 0;
 }
 
-/* Sidebar links */
 .sidebar a {
   display: block;
   padding: 0.75rem 1rem;
@@ -47,20 +44,29 @@
   transition: background 0.2s, color 0.2s;
 }
 
-/* Hover effect */
 .sidebar a:hover {
   background: #333;
   color: #fff;
 }
 
-/* Active link (we can toggle via JS later) */
 .sidebar a.active {
   background: #555;
   color: #fff;
   font-weight: bold;
 }
 
-/* Main story content */
+/* Right content column */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #fff;
+}
+
+/* ============================================
+   MAIN STORY CONTENT
+   ============================================ */
+
 .story-content {
   flex: 1;
   padding: 2rem;
@@ -76,6 +82,7 @@
   border-radius: 4px;
 }
 
+/* Quote span helpers */
 .quote {
   font-weight: bold;
   background: rgba(255, 166, 0, 0.1);
@@ -97,27 +104,10 @@
   border-radius: 4px;
 }
 
-/* right side column next to sidebar */
-.right-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  background: #fff;
-}
+/* ============================================
+   RESEARCHER PHOTO STYLING
+   ============================================ */
 
-/* slideshow full width inside right column */
-.slideshow-container {
-  width: 100%;
-  max-width: 900px;
-  margin: 2rem auto 1.5rem auto;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
-}
-
-/* ===========================================================
-   Researcher portrait styling — applies to all KWI subpages
-   =========================================================== */
 .researcher-photo {
   text-align: center;
   margin: 2rem auto;
@@ -151,4 +141,94 @@
 
 .citation-number:hover {
   text-decoration: underline;
+}
+
+/* ============================================
+   SLIDESHOW (MERGED FROM slideshow.css)
+   ============================================ */
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+
+  margin: 2rem auto 1.5rem auto;
+  border-radius: 10px;
+  /* keeping your KWI version */
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Slides */
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fade {
+  animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Navigation arrows */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transform: translateY(-50%);
+  user-select: none;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.prev {
+  left: 8px;
+}
+
+.next {
+  right: 8px;
+}
+
+/* Dots */
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #717171;
 }
