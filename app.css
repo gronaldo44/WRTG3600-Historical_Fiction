@@ -152,20 +152,18 @@ header p {
   display: flex;
   max-width: 1500px;
   margin: 0 auto;
+  padding-left: 260px;
 }
 
 /* ==========================================================
    LEFT SIDEBAR
    ========================================================== */
 .sidebar {
-  width: 260px;
-  background: #1f1f1f;
-  color: #ddd;
-  padding: 1.5rem 1rem;
-  height: calc(100vh - 60px);
-  position: sticky;
+  position: fixed;
   top: 60px;
-  overflow-y: auto;
+  left: 0;
+  height: calc(100vh - 60px);
+  width: 260px;
 }
 
 .sidebar ul {
