@@ -164,6 +164,11 @@ header p {
   left: 0;
   height: calc(100vh - 60px);
   width: 260px;
+
+  padding: 1.5rem 1rem;
+  background: #1f1f1f;
+  color: #ddd;
+  overflow-y: auto;
 }
 
 .sidebar ul {
