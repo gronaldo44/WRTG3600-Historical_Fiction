@@ -140,3 +140,15 @@
   font-style: italic;
   margin-top: 0.25rem;
 }
+
+.citation-number {
+  font-size: 0.85rem;
+  vertical-align: super;
+  text-decoration: none;
+  margin-left: 4px;
+  color: #005bbb;
+}
+
+.citation-number:hover {
+  text-decoration: underline;
+}
