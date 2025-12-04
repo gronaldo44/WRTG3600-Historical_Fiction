@@ -254,8 +254,7 @@ header p {
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-width: 300px;
-  /* <<< MUCH smaller */
+  max-width: 400px;
   margin: 3rem auto 0 auto;
   border-radius: 10px;
   overflow: hidden;
