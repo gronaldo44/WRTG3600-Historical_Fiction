@@ -5,3 +5,11 @@ fetch('content/header.html')
     document.getElementById('top-navbar').innerHTML = html;
   })
   .catch(err => console.error("Error loading header:", err));
+
+// Load footer
+fetch("content/footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.querySelector(".site-footer").innerHTML = data;
+  })
+  .catch(err => console.error("Error loading footer:", err));
