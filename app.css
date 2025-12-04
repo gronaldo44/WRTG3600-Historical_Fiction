@@ -361,11 +361,14 @@ header p {
   width: 100%;
   text-align: center;
   padding: 1.5rem 1rem;
-  margin-top: 3rem;
+
   background: #1f1f1f;
   color: #ddd;
   border-top: 1px solid #333;
+
+  box-sizing: border-box; 
 }
+
 
 .site-footer a {
   color: #4db8ff;
