@@ -1,53 +1,52 @@
-/* app.css */
+/* Global body styling */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background: #f4f4f4;
   color: #222;
 }
 
-header {
-  background: #222;
-  color: #fff;
-  padding: 2rem 1.5rem;
-  text-align: center;
-}
-
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
-  background: #fff;
+/* Generic page content container (for dashboard, LLMs page, About page, etc.) */
+.story-content {
+  max-width: 900px;            /* wider, but not too wide */
+  margin: 2rem auto;           /* centers content */
+  padding: 2rem;               /* comfortable whitespace */
+  background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  box-sizing: border-box;
 }
 
-h1, h2 {
+/* Improve text readability */
+.story-content p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+/* Headings */
+.story-content h1,
+.story-content h2,
+.story-content h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  line-height: 1.3;
+  font-weight: 700;
 }
 
-p {
-  margin-bottom: 1rem;
+/* Quote span styling (global) */
+.quote {
+  font-style: italic;
+  color: #555;
 }
 
-.section-list {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 2rem 0;
+/* Make links across the site consistent */
+a {
+  color: #005bbb;
+  text-decoration: none;
 }
 
-.section-list li {
-  padding: 0.5rem 0;
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: #666;
-  font-size: 0.9rem;
+a:hover {
+  text-decoration: underline;
 }

@@ -1,0 +1,13 @@
+.quote {
+  font-weight: bold;
+  background: rgba(255, 166, 0, 0.1);
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px;
+}
+
+.quote-input {
+  font-style: italic;
+  background: rgba(0, 162, 255, 0.1);
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px;
+}

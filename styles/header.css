@@ -1,0 +1,71 @@
+/* /styles/header.css */
+header {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 0.5rem 0 0 0;
+}
+
+/* /style/header.css */
+
+/* Header container */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo text */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #ddd; /* subtle hover effect */
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Active page highlight (optional, JS can toggle this) */
+.nav-links a.active {
+  background: #555;
+  color: #fff;
+}
