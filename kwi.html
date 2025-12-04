@@ -33,15 +33,59 @@
       </ul>
     </nav>
 
-    <!-- Main content -->
-    <main class="story-content" id="main-content">
-      <h2>Welcome to the Kaiser Wilhelm Institute</h2>
-      <p>Select a scientist from the sidebar to view the story.</p>
-    </main>
-  </div>
+    <!-- RIGHT SIDE CONTENT (column layout) -->
+    <div class="right-content">
+      
+      <!-- Main content -->
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="../images/julius-hallervorden.jpg" alt="Julius Hallervorden">
+        </div>
 
-  <script src="scripts/kwi.js"></script>
-  <script src="app.js"></script>
+        <div class="slide fade">
+          <img src="../images/hugo-spatz.png" alt="Hugo Spatz">
+        </div>
+
+        <div class="slide fade">
+          <img src="../images/berthold-ostertag.JPG" alt="Berthold Ostertag">
+        </div>
+
+        <div class="slide fade">
+          <img src="../images/hans-nachtsheim.png" alt="Hans Nachtsheim">
+        </div>
+
+        <div class="slide fade">
+          <img src="../images/dr-max-de-crinis.jpg" alt="Dr. Max de Crinis">
+        </div>
+
+        <div class="slide fade">
+          <img src="../images/carl-schneider.jpg" alt="Dr. Carl Schneider">
+        </div>
+
+        <!-- Navigation arrows -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+
+        <!-- Dot controls -->
+        <div class="dots-container">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <main class="story-content" id="main-content">
+        <h2>Welcome to the Kaiser Wilhelm Institute</h2>
+        <p>Select a scientist from the sidebar to view the story.</p>
+      </main>
+    </div>
+
+    <script src="scripts/kwi.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
